@@ -14,7 +14,7 @@ class LaravelCarbonizeServiceProvider extends ServiceProvider {
             __DIR__.'/../config/carbonize.php' => config_path('carbonize.php')
         ]);
 
-        $middlewareName = config('carbonize.middleware_name');
+        $middlewareName = config('carbonize.middleware_alias');
         $router->aliasMiddleware($middlewareName, Carbonize::class);
     }
 

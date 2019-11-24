@@ -29,6 +29,25 @@ Right now it only performs verification in bulk, so if one input is of the wrong
 
 1.  Add the possibility to partially convert request params to Carbon
 
+## Config
+
+Publishing config file:
+```shell script
+php artisan vendor:publish --provider="InovacionAL\LaravelCarbonize\LaravelCarbonizeServiceProvider"
+```
+
+You can change the middleware alias: 
+
+```php
+<?php
+
+return [
+    'has_separate_field_validation' => false, // Work in progress
+    'middleware_alias' => 'my_custom_alias',
+];
+```
+
+
 ## Motivation
 I was inspired to write this small middleware when writing some new features for an old Laravel project. 
 The task at hand was to add some date range filtering capability, but it was also required to ignore these fields if they
