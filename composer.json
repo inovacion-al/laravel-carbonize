@@ -1,0 +1,36 @@
+{
+    "name": "inovacion-al/laravel-carbonize",
+    "description": "A Laravel middleware for transforming date inputs automatically to Carbon instances.",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Jurgen",
+            "email": "jur.celmeta@gmail.com"
+        }
+    ],
+    "homepage": "https://github.com/inovacion-al/laravel-carbonize",
+    "keywords": [
+        "Laravel",
+        "Carbon",
+        "Carbonize",
+        "LaravelCarbonize",
+        "Middleware",
+        "Date",
+        "InovacionAL"
+    ],
+    "minimum-stability": "dev",
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "InovacionAL\\LaravelCarbonize\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "InovacionAL\\LaravelCarbonize\\LaravelCarbonizeServiceProvider"
+            ]
+        }
+    }
+}
