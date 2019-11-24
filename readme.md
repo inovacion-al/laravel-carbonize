@@ -20,8 +20,8 @@ An example:
 ->middleware('carbonize:d/m/Y,start_date,end_date')
 ```
 
-This middle ware will attempt to parse the input `date_field_name` with the format `format`. 
-If successful it will add a boolean `has_valid_date` to the request and replace the dates parameters with Carbon objects.
+This middleware will attempt to parse the input `date_field_name` with the format `format`. 
+If successful it will add a boolean `has_valid_dates` to the request and replace the dates parameters with Carbon objects.
 
 ## Coming Soon
 
